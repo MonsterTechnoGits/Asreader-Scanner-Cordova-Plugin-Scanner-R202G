@@ -1,0 +1,6 @@
+framework module LongRange2DSDK {
+  umbrella header "LongRange2DSDK.h"
+
+  export *
+  module * { export * }
+}

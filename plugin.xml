@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.asreader.cdv.longrange2d" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+   <name>LongRange2DPlugin</name>
+   <js-module name="LongRange2DPlugin" src="www/LongRange2DPlugin.js">
+       <clobbers target="longRange2D" />
+   </js-module>
+   <platform name="ios">
+       <config-file parent="/*" target="config.xml">
+          <feature name="LongRange2DPlugin">
+          <param name="ios-package" value="LongRange2DPlugin" />
+          <param name="onload" value="true" />
+          </feature>
+       </config-file>
+       <source-file src="src/ios/LongRange2DPlugin.mm" />
+           <!-- LongRange2D SDK -->
+          <framework src="src/ios/LongRange2DSDK.framework" custom="true" />
+          <framework src="src/ios/AsRingAccessorySDK.framework" custom="true" />
+       <config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
+            <array>
+                <string>jp.co.asx.asring.plus</string>            
+            </array>
+       </config-file>
+   </platform>
+</plugin>

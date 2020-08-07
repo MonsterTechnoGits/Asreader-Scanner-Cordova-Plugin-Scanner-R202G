@@ -1,0 +1,17 @@
+{
+  "name": "com.asreader.cdv.longrange2d",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "com.asreader.cdv.longrange2d",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC"
+}
